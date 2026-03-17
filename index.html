@@ -8,8 +8,132 @@
 <title>Sangamesh A | Developer Portfolio</title>
 
 <link rel="stylesheet" href="index.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <script src="https://kit.fontawesome.com/6b54c1d1a3.js" crossorigin="anonymous"></script>
+
+<style>
+/* Basic responsive styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #111;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #f5f5f5;
+}
+
+.hero h1 span {
+    color: #007bff;
+}
+
+.hero .buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 250px;
+}
+
+.timeline-item {
+    background: #eaeaea;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.contact-details p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+iframe {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+}
+</style>
 
 </head>
 
@@ -25,27 +149,23 @@
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#education">Education</a></li>
-<li><a href="#contact">Contact</a></li>
 <li><a href="#resume">Resume</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
+<!-- Home Section -->
 <section id="home" class="hero">
 <h1>Hi I'm <span>Sangamesh A</span></h1>
 <h3 id="typing"></h3>
 <p>Software Developer | Java | Python | SQL</p>
-
 <div class="buttons">
-  
-  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" target="_blank" class="btn">
-    View Resume
-  </a>
-  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" download class="btn">
-    Download Resume
-  </a>
+<a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" target="_blank" class="btn">View Resume</a>
+<a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" download class="btn">Download Resume</a>
 </div>
 </section>
 
+<!-- About Section -->
 <section id="about">
 <h2>About Me</h2>
 <div class="glass">
@@ -56,6 +176,7 @@ and solving real-world problems using Java, Python, SQL and modern web technolog
 </div>
 </section>
 
+<!-- Skills Section -->
 <section id="skills">
 <h2>Skills</h2>
 <div class="skills">
@@ -70,49 +191,44 @@ and solving real-world problems using Java, Python, SQL and modern web technolog
 </div>
 </section>
 
+<!-- Projects Section -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="projects">
-
 <div class="card">
 <h3>Krishi Book</h3>
 <p>Digital agricultural record management system.</p>
 <a href="https://github.com/sangGit-hash" target="_blank">View Code</a>
 </div>
-
 <div class="card">
 <h3>AI Resume Screening</h3>
 <p>AI system that analyzes and ranks resumes automatically using NLP and machine learning.</p>
 <a href="https://github.com/sangGit-hash/AI-Resume-Screening" target="_blank">View Project</a>
 </div>
-
 <div class="card">
 <h3>Fake Job Recruitment Detection</h3>
 <p>Machine learning model that identifies fraudulent job postings using Natural Language Processing.</p>
 <a href="https://github.com/sangGit-hash/Fake-Job-Recruitment-Detection" target="_blank">View Project</a>
 </div>
-
 <div class="card">
 <h3>Bookmark Maker</h3>
 <p>Web application that allows users to save and manage bookmarks dynamically.</p>
 <a href="http://bookmarkprojct.ccbp.tech" target="_blank">Live Demo</a>
 </div>
-
 <div class="card">
 <h3>Chatbot Application</h3>
 <p>Interactive chatbot built using JavaScript that responds to user queries.</p>
 <a href="http://chatbot30.ccbp.tech" target="_blank">Live Demo</a>
 </div>
-
 <div class="card">
 <h3>Todo Application</h3>
 <p>Task management web application with CRUD operations and local storage.</p>
 <a href="http://todoapp301.ccbp.tech" target="_blank">Live Demo</a>
 </div>
-
 </div>
 </section>
 
+<!-- Education Section -->
 <section id="education">
 <h2>Education</h2>
 <div class="timeline">
@@ -125,47 +241,33 @@ and solving real-world problems using Java, Python, SQL and modern web technolog
 </div>
 </section>
 
-<!-- Resume Section with embedded PDF for Mobile -->
+<!-- Resume Section -->
 <section id="resume">
 <h2>Resume</h2>
-<p>Open below or download:</p>
-<div class="resume-embed">
-<iframe 
-  src="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" 
-  width="100%" 
-  height="600px"
-  style="border: none;">
-</iframe>
+<p>View or download my resume:</p>
+<iframe src="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" width="100%" height="600px"></iframe>
 <div class="buttons" style="margin-top: 10px;">
-  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" target="_blank" class="btn">
-    View Full PDF
-  </a>
-  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" download class="btn">
-    Download PDF
-  </a>
-</div>
+  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" target="_blank" class="btn">View Full PDF</a>
+  <a href="https://sanggit-hash.github.io/Portfolio/Sangam_Resumee_2026.pdf" download class="btn">Download PDF</a>
 </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
 <h2>Contact Me</h2>
 <div class="contact-details">
-<p><strong>Email:</strong> 
-<a href="mailto:sangamesh3011@gmail.com">sangamesh3011@gmail.com</a></p>
-<p><strong>Phone:</strong> 
-<a href="tel:+918088365513">+91 8088365513</a></p>
-<p><strong>GitHub:</strong> 
-<a href="https://github.com/sangGit-hash" target="_blank">github.com/sangGit-hash</a></p>
-<p><strong>LinkedIn:</strong> 
-<a href="https://linkedin.com/in/sangamesh-a-b3308735a" target="_blank">linkedin.com/in/sangamesh-a-b3308735a</a></p>
+<p><strong>Email:</strong> <a href="mailto:sangamesh3011@gmail.com">sangamesh3011@gmail.com</a></p>
+<p><strong>Phone:</strong> <a href="tel:+918088365513">+91 8088365513</a></p>
+<p><strong>GitHub:</strong> <a href="https://github.com/sangGit-hash" target="_blank">github.com/sangGit-hash</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sangamesh-a-b3308735a" target="_blank">linkedin.com/in/sangamesh-a-b3308735a</a></p>
 </div>
 </section>
 
+<!-- Footer -->
 <footer>
 <p>© 2026 Sangamesh A</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
